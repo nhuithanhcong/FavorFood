@@ -12,9 +12,29 @@ header {
 }
 
 nav {
+    display: inline-block;
+    width: 80%;
     background-color: #e0dcd3;
     padding: 10px;
     margin-top: 15px;
+}
+
+nav img {
+    width: 30%;
+    position: relative;
+    top: 20px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 main {
@@ -25,6 +45,11 @@ main {
     margin: 0 auto;
 }
 
+main ul li {
+    display: list-item;
+    width: auto;
+}
+
 footer {
     background-color: #333333;
     color: #ffffff;
@@ -32,14 +57,6 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
-
-
-li {
-    display: inline-block; 
-    width: 120px;          
-    margin-right: 10px;
-}
-
 
 main ul li {
     display: list-item;   
@@ -54,4 +71,46 @@ h1 {
 
 p {
     line-height: 1.6; 
+}
+
+.skip-link {
+display: inline-block;
+    font-size: 16px;
+    color: #666666;
+    text-decoration: underline;
+    margin: 10px 0 0 20px;
+    padding: 8px 12px;
+}
+
+.skip-link:hover, .skip-link:focus {
+    color: #8b0000;           
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.flex-item {
+    background-color: #e0dcd3;
+    padding: 15px;
+    margin: 5px;
+    flex: 1 1 25%;
+    text-align: center;
 }
