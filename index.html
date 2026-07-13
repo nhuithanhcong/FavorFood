@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <header>
         <h1>Món Ăn Bất Kì</h1>
         <p>Dù ăn là để sống hay sống là để ăn đi chăng nữa thì ta vẫn cần những món ngon</p>
         
         <nav>
+            <img src="imgs/fork.png" alt="Logo" class="nav-logo">
+            <p>người lần đầu vẽ đừng quan tâm</p>
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
                 <li><a href="menu.html">Thực đơn</a></li>
@@ -21,7 +24,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section>
             <h2>Món Ăn Tôi Yêu</h2>
             <p>Dưới đây là một số món ăn mà tôi yêu thích:</p>
@@ -35,19 +38,30 @@
         <section>
             <h2>Cũng như trên nhưng là hình</h2>
             <p>Hình ảnh minh họa:</p>
-            <div>
-                <h3>1. Tô phở cơ bản</h3>
-                <img src="https://i.pinimg.com/originals/c8/f6/26/c8f626b92ee387d0d6b2b184f1738565.jpg" alt="Tô phở cơ bản" width="500" height="300">
-            </div>
+            <div class="grid">
+                <div>
+                    <h3>1. Tô phở cơ bản</h3>
+                    <img src="https://i.pinimg.com/originals/c8/f6/26/c8f626b92ee387d0d6b2b184f1738565.jpg" alt="Tô phở cơ bản" width="500" height="300">
+                </div>
 
-            <div>
-                <h3>2. Bánh xèo</h3>
-                <img src="https://www.tastingtable.com/img/gallery/bnh-xo-the-delectable-vietnamese-crepes-you-should-know/intro-1666117324.jpg" alt="Bánh xèo" width="500" height="300">
-            </div>
+                <div>
+                    <h3>2. Bánh xèo</h3>
+                    <img src="https://www.tastingtable.com/img/gallery/bnh-xo-the-delectable-vietnamese-crepes-you-should-know/intro-1666117324.jpg" alt="Bánh xèo" width="500" height="300">
+                </div>
 
-            <div>
-                <h3>3. Xiên bẩn</h3>
-                <img src="https://phamnghia.vn/wp-content/uploads/2022/11/xien-ban-nhung-khong-ban-2.png" alt="Xiên bẩn" width="500" height="300">
+                <div>
+                    <h3>3. Xiên bẩn</h3>
+                    <img src="https://phamnghia.vn/wp-content/uploads/2022/11/xien-ban-nhung-khong-ban-2.png" alt="Xiên bẩn" width="500" height="300">
+                </div>
+            </div>
+        </section>
+        <section>
+            
+            <h2>Khu vực Flex bổ sung (Flex)</h2>
+            <div class="flex">
+                <div class="flex-item">Món ăn nhanh</div>
+                <div class="flex-item">Món truyền thống</div>
+                <div class="flex-item">Món ăn vặt</div>
             </div>
         </section>
 
