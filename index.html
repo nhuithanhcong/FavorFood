@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="imgs/fork.png">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body onload="addTabFocus()">
     <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <header>
         <h1>Món Ăn Bất Kì</h1>
@@ -32,13 +32,13 @@
                 <li>Xiên bẩn</li>
                 <li>Bún đậu mắm tôm</li>
                 <li>Bánh mì</li>
+                <li>Cơm tấm</li>
             </ul>
         </section>
         
         <section>
-            <h2>Cũng như trên nhưng là hình (5 Món)</h2>
+            <h2>Cũng như trên nhưng là hình (6 Món)</h2>
             <p>Hình ảnh minh họa:</p>
-
 
             <div id="image">
                 Hover over an image below to display here.
@@ -49,7 +49,6 @@
                     <h3>1. Tô phở cơ bản</h3>
                     <img src="https://i.pinimg.com/originals/c8/f6/26/c8f626b92ee387d0d6b2b184f1738565.jpg" 
                          alt="Tô phở cơ bản" 
-                         tabindex="0"
                          onmouseover="upDate(this)" 
                          onmouseleave="unDo()" 
                          onfocus="upDate(this)" 
@@ -58,10 +57,8 @@
 
                 <div>
                     <h3>2. Bánh xèo</h3>
-
                     <img src="https://www.tastingtable.com/img/gallery/bnh-xo-the-delectable-vietnamese-crepes-you-should-know/intro-1666117324.jpg" 
                          alt="Bánh xèo" 
-                         tabindex="0"
                          onmouseover="upDate(this)" 
                          onmouseleave="unDo()" 
                          onfocus="upDate(this)" 
@@ -70,10 +67,8 @@
 
                 <div>
                     <h3>3. Xiên bẩn</h3>
-
                     <img src="https://phamnghia.vn/wp-content/uploads/2022/11/xien-ban-nhung-khong-ban-2.png" 
                          alt="Xiên bẩn" 
-                         tabindex="0"
                          onmouseover="upDate(this)" 
                          onmouseleave="unDo()" 
                          onfocus="upDate(this)" 
@@ -84,7 +79,6 @@
                     <h3>4. Bún đậu mắm tôm</h3>
                     <img src="https://i.pinimg.com/originals/c8/f6/26/c8f626b92ee387d0d6b2b184f1738565.jpg" 
                          alt="Bún đậu mắm tôm" 
-                         tabindex="0"
                          onmouseover="upDate(this)" 
                          onmouseleave="unDo()" 
                          onfocus="upDate(this)" 
@@ -95,7 +89,16 @@
                     <h3>5. Bánh mì Việt Nam</h3>
                     <img src="https://www.tastingtable.com/img/gallery/bnh-xo-the-delectable-vietnamese-crepes-you-should-know/intro-1666117324.jpg" 
                          alt="Bánh mì Việt Nam" 
-                         tabindex="0"
+                         onmouseover="upDate(this)" 
+                         onmouseleave="unDo()" 
+                         onfocus="upDate(this)" 
+                         onblur="unDo()">
+                </div>
+
+                <div>
+                    <h3>6. Cơm tấm Sài Gòn</h3>
+                    <img src="https://phamnghia.vn/wp-content/uploads/2022/11/xien-ban-nhung-khong-ban-2.png" 
+                         alt="Cơm tấm Sài Gòn" 
                          onmouseover="upDate(this)" 
                          onmouseleave="unDo()" 
                          onfocus="upDate(this)" 
@@ -103,6 +106,7 @@
                 </div>
             </div>
         </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
